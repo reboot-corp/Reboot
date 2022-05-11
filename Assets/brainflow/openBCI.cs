@@ -26,8 +26,9 @@ public class openBCI : MonoBehaviour
             BoardShim.enable_dev_board_logger();
 
             BrainFlowInputParams input_params = new BrainFlowInputParams();
-            int board_id = (int)BoardIds.GANGLION_BOARD;
-            input_params.serial_port = "COM8";
+            // int board_id = (int)BoardIds.GANGLION_BOARD;
+            int board_id = (int)BoardIds.SYNTHETIC_BOARD;
+            // input_params.serial_port = "COM8";
             board_shim = new BoardShim(board_id, input_params);
             board_shim.prepare_session();
             board_shim.start_stream(450000, "file://brainflow_data.csv:w");
@@ -37,6 +38,8 @@ public class openBCI : MonoBehaviour
             eeg_channels = BoardShim.get_eeg_channels(board_shim.get_board_id());
             //print(sampling_rate);
             print("sampling rate :" + sampling_rate);
+
+
 
         }
         catch (BrainFlowException e)

@@ -90,7 +90,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - vegetationtex:
-        m_Texture: {fileID: 2800000, guid: 58d7850c2a724c847918ee8329755d0d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5f3aed8c81841d94a8f2262063f426c4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
